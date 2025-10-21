@@ -1,0 +1,104 @@
+{
+  "units": [
+    {
+      "unitId": "soldier_basic",
+      "unitName": "Basic Soldier",
+      "description": "Standard infantry unit with balanced stats",
+      "maxHealth": 100,
+      "attackDamage": 15,
+      "attackRange": 3.0,
+      "attackCooldown": 1.5,
+      "moveSpeed": 0,
+      "cpCost": 50,
+      "unitType": 0,
+      "attackType": 1,
+      "spritePath": "Sprites/Units/soldier_basic",
+      "unitColor": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 1.0,
+        "a": 1.0
+      }
+    },
+    {
+      "unitId": "tank_heavy",
+      "unitName": "Heavy Tank",
+      "description": "Armored unit with high HP but slow attack",
+      "maxHealth": 300,
+      "attackDamage": 40,
+      "attackRange": 2.5,
+      "attackCooldown": 3.0,
+      "moveSpeed": 0,
+      "cpCost": 100,
+      "unitType": 1,
+      "attackType": 0,
+      "spritePath": "Sprites/Units/tank_heavy",
+      "unitColor": {
+        "r": 0.5,
+        "g": 0.7,
+        "b": 0.5,
+        "a": 1.0
+      }
+    },
+    {
+      "unitId": "sniper_elite",
+      "unitName": "Elite Sniper",
+      "description": "Long-range unit with high damage, low HP",
+      "maxHealth": 60,
+      "attackDamage": 50,
+      "attackRange": 8.0,
+      "attackCooldown": 2.5,
+      "moveSpeed": 0,
+      "cpCost": 75,
+      "unitType": 2,
+      "attackType": 1,
+      "spritePath": "Sprites/Units/sniper_elite",
+      "unitColor": {
+        "r": 1.0,
+        "g": 0.6,
+        "b": 0.6,
+        "a": 1.0
+      }
+    },
+    {
+      "unitId": "medic_field",
+      "unitName": "Field Medic",
+      "description": "Support unit that heals nearby allies",
+      "maxHealth": 80,
+      "attackDamage": 5,
+      "attackRange": 5.0,
+      "attackCooldown": 3.0,
+      "moveSpeed": 0,
+      "cpCost": 60,
+      "unitType": 3,
+      "attackType": 1,
+      "spritePath": "Sprites/Units/medic_field",
+      "unitColor": {
+        "r": 0.6,
+        "g": 1.0,
+        "b": 0.6,
+        "a": 1.0
+      }
+    },
+    {
+      "unitId": "artillery_support",
+      "unitName": "Artillery Support",
+      "description": "Splash damage unit, hits multiple enemies",
+      "maxHealth": 100,
+      "attackDamage": 30,
+      "attackRange": 6.0,
+      "attackCooldown": 4.0,
+      "moveSpeed": 0,
+      "cpCost": 90,
+      "unitType": 4,
+      "attackType": 2,
+      "spritePath": "Sprites/Units/artillery_support",
+      "unitColor": {
+        "r": 1.0,
+        "g": 0.8,
+        "b": 0.4,
+        "a": 1.0
+      }
+    }
+  ]
+}
