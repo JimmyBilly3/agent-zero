@@ -1,0 +1,32 @@
+{
+  "name": "lingyu-dian",
+  "version": "1.0.0",
+  "description": "靈語殿 - The Palace of Living Words - Real-time multilingual translator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python main.py",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview",
+    "install:all": "npm run install:frontend && npm run install:backend",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && pip install -r requirements.txt"
+  },
+  "keywords": [
+    "translation",
+    "multilingual",
+    "ai",
+    "chinese",
+    "english",
+    "thai",
+    "speech-to-text",
+    "text-to-speech",
+    "ocr"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

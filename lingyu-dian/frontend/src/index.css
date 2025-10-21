@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-black-velvet text-silver font-gothic;
+    background-image:
+      radial-gradient(circle at 20% 50%, rgba(102, 0, 0, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .gothic-card {
+    @apply bg-gradient-to-br from-black-velvet via-gray-900 to-black-velvet border-2 border-gold/30 rounded-lg shadow-2xl backdrop-blur-sm;
+  }
+
+  .gothic-button {
+    @apply bg-gradient-to-r from-crimson to-crimson/80 hover:from-crimson/90 hover:to-crimson text-gold font-semibold py-3 px-6 rounded-lg transition-all duration-300 border border-gold/50 hover:border-gold hover:shadow-lg hover:shadow-gold/20;
+  }
+
+  .gothic-input {
+    @apply bg-black-velvet/50 border-2 border-gold/30 rounded-lg p-4 text-silver placeholder-silver/50 focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20 transition-all duration-300;
+  }
+
+  .floating-petals {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(229, 165, 199, 0.6), transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 15s infinite ease-in-out;
+  }
+
+  .mist-effect {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(229, 165, 199, 0.03), transparent);
+    pointer-events: none;
+    animation: glow 4s ease-in-out infinite;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0E0E0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #660000, #D4AF37);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #D4AF37, #660000);
+}
+
+/* Text selection */
+::selection {
+  background-color: rgba(212, 175, 55, 0.3);
+  color: #D4AF37;
+}
+
+/* Glow text effect */
+.glow-text {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5),
+               0 0 20px rgba(212, 175, 55, 0.3),
+               0 0 30px rgba(212, 175, 55, 0.2);
+}
